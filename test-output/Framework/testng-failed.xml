@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Framework]">
+  <test thread-count="5" name="Keyword(failed)">
+    <classes>
+      <class name="driverFactory.KeyWordDriverScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- driverFactory.KeyWordDriverScript -->
+    </classes>
+  </test> <!-- Keyword(failed) -->
+  <test thread-count="5" name="Hybrid(failed)">
+    <classes>
+      <class name="driverFactory.HybridDriverScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- driverFactory.HybridDriverScript -->
+    </classes>
+  </test> <!-- Hybrid(failed) -->
+</suite> <!-- Failed suite [Framework] -->
